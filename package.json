@@ -1,8 +1,8 @@
 {
   "name": "select-props",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility for composing API payloader functions",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint src",
