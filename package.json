@@ -1,0 +1,31 @@
+{
+  "name": "select-props",
+  "version": "1.0.0",
+  "description": "Utility for composing API payloader functions",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/malowitzki/select-props.git"
+  },
+  "author": "malowitzki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malowitzki/select-props/issues"
+  },
+  "homepage": "https://github.com/malowitzki/select-props#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "case": "^1.5.5",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  }
+}
