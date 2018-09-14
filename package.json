@@ -1,6 +1,6 @@
 {
   "name": "select-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility for composing API payloader functions",
   "main": "dist/index.js",
   "scripts": {
