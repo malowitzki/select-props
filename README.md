@@ -130,7 +130,7 @@ const out1 = selectProps('meaningOfLife', 'helloWorld')
   .from(in);
 // { meaningOfLife: 42, helloWorld: '!' }
 
-const y = selectProps(...props)
+const y = selectProps('MeaningOfLife', 'HelloWorld')
   .withCaseTransform({ to: Case.snake })
   .from(in);
 // { meaning_of_life: 42, hello_world: '!' }
