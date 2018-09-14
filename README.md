@@ -95,7 +95,7 @@ const goldenDelicious = {
 const parsedGoldenDelicious = selectProps(
   'color',
   { comparisonRules: selectProps('doNotCompareTo') }
-);
+).from(goldenDelicious);
 // { color: 'yellow', comparisonRules: { doNotCompareTo: ['oranges'] } }
 ```
 ### parsers
@@ -123,16 +123,16 @@ const parsedApple2 = appleParser(apple2);
 ```
 import Case from 'case';
 
-const in = { MeaningOfLife: 42, HelloWorld: '!' };
+const x = { MeaningOfLife: 42, HelloWorld: '!' };
 
-const out1 = selectProps('meaningOfLife', 'helloWorld')
+const y = selectProps('meaningOfLife', 'helloWorld')
   .withCaseTransform({ from: Case.pascal })
-  .from(in);
+  .from(x);
 // { meaningOfLife: 42, helloWorld: '!' }
 
-const y = selectProps('MeaningOfLife', 'HelloWorld')
+const z = selectProps('MeaningOfLife', 'HelloWorld')
   .withCaseTransform({ to: Case.snake })
-  .from(in);
+  .from(x);
 // { meaning_of_life: 42, hello_world: '!' }
 ```
 ## contribute
