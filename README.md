@@ -10,7 +10,7 @@ npm i -s select-props
 ```
 import selectProps from 'select-props';
 ```
-Use `selectProps` to compose payloader functions. "But what's a payloader?!" I hear you cry. For the uninitiated (or those just those who don't use the same word), a payloader takes a handful of properties from one object and puts them into a new object, sometimes doing some parsing along the way. They can be useful for parsing data structures in API responses, for example.
+Use `selectProps` to compose payloader functions. "But what's a payloader?!" I hear you cry. For the uninitiated (or just those who don't use the same word), a payloader takes a handful of properties from one object and puts them into a new object, sometimes doing some parsing along the way. They can be useful for parsing data structures in API responses, for example.
 
 `selectProps` lets you compose payloaders with a very DRY pattern. It's fairly extensible, allows you to integrate custom parsing, and supports basic case conversion of property names.
 ### basic selection

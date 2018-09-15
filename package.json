@@ -1,13 +1,15 @@
 {
   "name": "select-props",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utility for composing API payloader functions",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint src",
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean && mkdir lib && touch lib/index.js",
     "build": "babel src --out-file lib/index.js",
-    "prepublish": "npm run build"
+    "prepare": "npm run lint && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
